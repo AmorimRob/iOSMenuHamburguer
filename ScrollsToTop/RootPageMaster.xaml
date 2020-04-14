@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScrollsToTop.RootPageMaster"
+             xmlns:controles="clr-namespace:ScrollsToTop.Controles"
+             Title="Master">
+ <StackLayout CompressedLayout.IsHeadless="true" Spacing="0">
+        <Frame Padding="10"
+               HeightRequest="300"
+               BackgroundColor="Red"
+               CornerRadius="0"
+               HasShadow="false">
+            <Label Text="Nome do Usuário" 
+                   Margin="10"
+                   VerticalOptions="EndAndExpand"
+                   VerticalTextAlignment="End"/>
+        </Frame>
+        <controles:CustomScrollView>
+            <StackLayout CompressedLayout.IsHeadless="true" Spacing="20">
+                <Label Text="Menu 1" />
+                <Label Text="Menu 2" />
+                <Label Text="Menu 3" />
+                <Label Text="Menu 4" />
+                <Label Text="Menu 5" />
+                <Label Text="Menu 6" />
+                <Label Text="Menu 7" />
+                <Label Text="Menu 8" />
+                <Label Text="Menu 9" />
+                <Label Text="Menu 10" />
+            </StackLayout>
+        </controles:CustomScrollView>
+    </StackLayout>
+</ContentPage>
